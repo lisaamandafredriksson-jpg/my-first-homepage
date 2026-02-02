@@ -1,0 +1,150 @@
+/* Grundinställningar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #fdeef5;
+}
+
+/* Header */
+header {
+    background-color: #f4c2d7;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 40px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #d56a9a;
+    font-family: "Brush Script MT", cursive;
+}
+
+/* Navigation */
+nav {
+    background-color: #f4c2d7;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Section och Aside */
+aside, .contact-section {
+    border-radius: 15px;
+    background-color: #fff5fa;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+aside h2 {
+    color: #d56a9a;
+    font-family: "Brush Script MT", cursive;
+}
+
+aside p {
+    color: #333;
+    font-family: Verdana, sans-serif;
+}
+
+.contact-section {
+    width: 65%;
+    float: left;
+    font-family: Verdana, sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-inputs {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #fd1f92;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ffc9e5, #fd1f92);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #f4c2d7;
+    color: white;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    width: 65%;
+    margin: 0 auto;
+    clear: both;
+}
+
+/* Bilder */
+.responsive-img {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    aside, .contact-section, footer {
+        width: 95%;
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+
+    .responsive-img {
+        width: 100%;
+        max-height: 250px;
+    }
+}
