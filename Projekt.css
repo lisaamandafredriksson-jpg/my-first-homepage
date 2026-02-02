@@ -1,0 +1,107 @@
+header, nav, section, article, aside, footer {
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #fdeef5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 40px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #d56a9a;
+    font-family: "Brush Script MT", cursive;
+    text-align: center;
+}
+
+nav {
+    background-color: #f4c2d7;
+    color: white;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+section, article {
+    background-color: #fff5fa;
+    color: #333;
+    font-family: Verdana, sans-serif;
+    padding: 20px;
+    width: 65%;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    background-color: #ffe3ee;
+    padding: 20px;
+    font-style: italic;
+    margin-left: 15px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #f4c2d7;
+    color: white;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    padding: 15px;
+    width: 65%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.responsive-img {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+
+/* Större bilder för stora skärmar */
+@media (min-width: 1200px) {
+    .responsive-img {
+        height: auto;
+        max-width: auto;
+    }
+
+    img {
+        height: 350px;
+        max-width: 350px;
+    }
+}
+
+/* Mobilresponsiv */
+@media (max-width: 768px) {
+    aside, section, article, footer {
+        width: 95%;
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+
+    .responsive-img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+}
